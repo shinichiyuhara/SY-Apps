@@ -21,7 +21,7 @@ A macOS library manager for video collections — manage, tag, preview, play, an
 
 ## Install
 
-Coming to the Mac App Store — macOS 14 (Sonoma) or later, Apple Silicon (M1 / M2 / M3 / M4).
+Coming to the Mac App Store — requires macOS 14 (Sonoma) or later.
 
 ## Privacy
 
