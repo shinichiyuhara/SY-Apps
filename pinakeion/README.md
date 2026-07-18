@@ -22,7 +22,7 @@ A macOS library manager for collections of image archives. Register one or more 
 
 ## Install
 
-Coming to the Mac App Store — requires macOS 14 (Sonoma) or later.
+[Available on the Mac App Store](https://apps.apple.com/app/id6772719033?mt=12) — requires macOS 14 (Sonoma) or later.
 
 ## Privacy
 

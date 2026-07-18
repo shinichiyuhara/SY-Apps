@@ -4,9 +4,9 @@ A small family of focused macOS apps for organising and reading your local media
 
 | App | Description | App Store |
 |---|---|---|
-| [Skopeion](skopeion/) | Comic / image viewer (manga-tuned) | Coming soon |
-| [Pinakeion](pinakeion/) | Image-archive library manager | Coming soon |
-| [Arkheion](arkheion/) | Read-only archive inspector with Quick Look | Coming soon |
+| [Skopeion](skopeion/) | Comic / image viewer (manga-tuned) | [Mac App Store](https://apps.apple.com/app/id6771427796?mt=12) |
+| [Pinakeion](pinakeion/) | Image-archive library manager | [Mac App Store](https://apps.apple.com/app/id6772719033?mt=12) |
+| [Arkheion](arkheion/) | Read-only archive inspector with Quick Look | [Mac App Store](https://apps.apple.com/app/id6772701489?mt=12) |
 | [Kineion](kineion/) | Video library manager (external-player based) | Coming soon |
 | [LexxUp](lexxup/) | EPWING dictionary reader (cross-dictionary search) | Coming soon |
 

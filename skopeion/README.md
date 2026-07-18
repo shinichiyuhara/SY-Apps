@@ -22,7 +22,7 @@ A fast, distraction-free comic and image viewer for macOS — tuned for manga re
 
 ## Install
 
-Coming to the Mac App Store — requires macOS 14 (Sonoma) or later.
+[Available on the Mac App Store](https://apps.apple.com/app/id6771427796?mt=12) — requires macOS 14 (Sonoma) or later.
 
 ## Privacy
 

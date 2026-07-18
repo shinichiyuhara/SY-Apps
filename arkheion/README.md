@@ -20,7 +20,7 @@ A sandboxed, read-only archive inspector for macOS — browse and preview every 
 
 ## Install
 
-Coming to the Mac App Store — requires macOS 14 (Sonoma) or later. Sibling apps in the suite (Skopeion, Pinakeion, Kineion) are also pre-release; the cross-links below point at their own GitHub mirrors, not live App Store records yet.
+[Available on the Mac App Store](https://apps.apple.com/app/id6772701489?mt=12) — requires macOS 14 (Sonoma) or later.
 
 ## Privacy
 
