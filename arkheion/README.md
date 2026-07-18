@@ -35,6 +35,7 @@ Arkheion works entirely offline. It ships without any network entitlement — no
 - [Skopeion](../skopeion/) — comic / image viewer (manga-tuned)
 - [Pinakeion](../pinakeion/) — image-archive library manager
 - [Kineion](../kineion/) — video library manager (external-player based)
+- [LexxUp](../lexxup/) — EPWING dictionary reader (cross-dictionary search)
 
 ## Support
 

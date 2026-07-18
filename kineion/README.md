@@ -21,7 +21,7 @@ A macOS library manager for video collections — manage, tag, preview, play, an
 
 ## Install
 
-Coming to the Mac App Store — macOS 14 (Sonoma) or later.
+Coming to the Mac App Store — macOS 14 (Sonoma) or later, Apple Silicon (M1 / M2 / M3 / M4).
 
 ## Privacy
 
@@ -36,6 +36,7 @@ Kineion works entirely offline. It does not collect, transmit, or share any data
 - [Skopeion](../skopeion/) — comic / image viewer (manga-tuned)
 - [Pinakeion](../pinakeion/) — image-archive library manager
 - [Arkheion](../arkheion/) — read-only archive inspector with Quick Look
+- [LexxUp](../lexxup/) — EPWING dictionary reader (cross-dictionary search)
 
 ## Support
 

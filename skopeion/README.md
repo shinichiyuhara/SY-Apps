@@ -41,6 +41,7 @@ Encrypted-archive passwords live in your macOS Keychain, and the bookmarks that 
 - [Pinakeion](../pinakeion/) — image-archive library manager
 - [Arkheion](../arkheion/) — read-only archive inspector with Quick Look
 - [Kineion](../kineion/) — video library manager (external-player based)
+- [LexxUp](../lexxup/) — EPWING dictionary reader (cross-dictionary search)
 
 ## Support
 

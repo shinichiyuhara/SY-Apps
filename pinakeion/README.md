@@ -15,7 +15,8 @@ A macOS library manager for collections of image archives. Register one or more 
 - Full menu-bar coverage with macOS-canonical shortcuts (⌘O open, ⌘Y quick preview, ⌘B favorite, ⌘U read, ⌘1–⌘5 rating, ⌘F find, ⌘R rescan current library, ⌘⌃D folder browser). Right-click context menus carry the same hints inline.
 - Double-click opens the archive with the system default handler (whichever reader you've associated with the file type in Finder).
 - **Remove from Library** (⌥⌘⌫) forgets an archive's catalogue entry while leaving the file untouched on disk; delete the file itself in Finder whenever you want.
-- File → Re-scan (and the toolbar Refresh button) purge orphan rows + their derived thumbnail / preview cache files, so a Finder-side delete is reflected end-to-end.
+- Library → Re-scan (and the toolbar Refresh button) purge orphan rows + their derived thumbnail / preview cache files, so a Finder-side delete is reflected end-to-end.
+- Scanning skips cache, temp, and system folders, and never descends into your Apple Music, Photos, or other OS media libraries — so it stays fast, keeps the catalogue clean, and never triggers a media-access permission prompt.
 - Settings → File Access grants broad sandbox access to your home folder or an external volume in one step, separate from the Library catalogue.
 - English / Japanese interface; menu titles follow the in-app Language preference, not the OS locale.
 
@@ -36,6 +37,7 @@ Pinakeion works entirely offline. No data is collected, transmitted, or shared. 
 - [Skopeion](../skopeion/) — comic / image viewer (manga-tuned)
 - [Arkheion](../arkheion/) — read-only archive inspector with Quick Look
 - [Kineion](../kineion/) — video library manager (external-player based)
+- [LexxUp](../lexxup/) — EPWING dictionary reader (cross-dictionary search)
 
 ## Support
 
