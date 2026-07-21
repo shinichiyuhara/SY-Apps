@@ -15,7 +15,7 @@ information. It runs entirely on your Mac and makes no network requests.
 ## What is stored locally
 
 Stored only on your Mac (macOS UserDefaults, the app's local SQLite database, or
-its Application Support / Caches / Logs directories):
+its Application Support / Caches directories):
 
 - **Your dictionary folder** — read-only. You choose the folder; on the Mac App
   Store version a security-scoped bookmark is saved so the app can reopen it
@@ -35,13 +35,13 @@ its Application Support / Caches / Logs directories):
 - **Preferences** — interface language, display settings (font, size, spacing,
   colors, zoom, vertical writing), and behavior flags. Stored in macOS
   UserDefaults.
-- **Optional diagnostic log** (off by default; toggle from Settings →
-  Diagnostics) — written locally; dictionary file names and paths are redacted by
-  default.
+- **Activity log** — an in-memory diagnostic log shown in the app's log panel;
+  it is not written to disk and is discarded when you quit. Dictionary file names
+  and paths in it are redacted by default (Settings → Diagnostics).
 
-App data lives under `~/Library/Application Support/Jisho/`,
-`~/Library/Caches/`, and `~/Library/Logs/`; preferences live in macOS
-UserDefaults. Nothing leaves your Mac.
+App data lives under `~/Library/Application Support/Jisho/` and
+`~/Library/Caches/`; preferences live in macOS UserDefaults. Nothing leaves your
+Mac.
 
 ## Required-reason APIs
 

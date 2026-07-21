@@ -4,6 +4,10 @@ A macOS dictionary app for **EPWING** electronic dictionaries. Point it at your
 dictionary folder and search your whole shelf at once — one query, results from
 every dictionary, merged and grouped, in a fast, familiar interface.
 
+An English dictionary is **included**, so it works the moment you open it:
+Webster's Revised Unabridged Dictionary (1913), in the public domain. Add your
+own EPWING dictionaries whenever you like.
+
 ## What it does
 
 - **Cross-dictionary search** across every registered EPWING dictionary, run in
