@@ -1,6 +1,6 @@
 # Privacy Policy — Pinakeion
 
-Last updated: 2026-07-09
+Last updated: 2026-07-26
 
 Pinakeion ("the app") does not collect, transmit, or share any
 personal information.
@@ -50,6 +50,18 @@ its Caches / Logs directories):
   Keychain (this device only, never synced to iCloud), used to verify
   that the saved security-scoped folder bookmarks have not been
   tampered with. It is not a password and unlocks nothing on its own.
+
+## What is read but never stored
+
+- **Spotlight usage attributes**: when you select an archive, the Inspector
+  reads that one file's macOS Spotlight attributes — how many times it was
+  opened by any app (`kMDItemUseCount`), when it was last used
+  (`kMDItemLastUsedDate`), and, if it was downloaded, the source URL the
+  download recorded (`kMDItemWhereFroms`). These are read from the index
+  macOS already maintains on your Mac, shown in the Inspector, and then
+  discarded: they are not written to the catalogue, not cached, and — like
+  everything else here — never transmitted. Nothing is written back to
+  Spotlight either.
 
 ## How to delete the data
 

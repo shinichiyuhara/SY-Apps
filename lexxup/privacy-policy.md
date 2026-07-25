@@ -19,8 +19,10 @@ its Application Support / Caches directories):
 
 - **Your dictionary folder** — read-only. You choose the folder; on the Mac App
   Store version a security-scoped bookmark is saved so the app can reopen it
-  across launches. LexxUp reads the EPWING dictionaries in it to search and
-  display entries, and never modifies, moves, or deletes your dictionaries.
+  across launches. LexxUp reads the dictionaries in it to search and display
+  entries, and never modifies, moves, or deletes your dictionaries. The
+  dictionary that ships inside the app is read from the app bundle and is not
+  copied anywhere.
 - **History** — the entries you navigate to, grouped by day.
 - **Bookmarks** — saved entries and the folders you organize them into.
 - **Dictionary registry** — which dictionaries are enabled, their order, and the

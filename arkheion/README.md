@@ -4,7 +4,7 @@ A sandboxed, read-only archive inspector for macOS — browse and preview every 
 
 ## What it does
 
-- Opens ZIP / TAR / GZIP / BZIP2 / XZ / LZMA / 7-Zip / Zstandard / RAR / CBR in a single window. **Read-only by design — never modifies archive contents.**
+- Opens ZIP (`.zip` `.cbz` `.jar` `.ipa` `.apk` `.epub`), TAR plain or compressed (`.tar` `.tgz` `.tbz` `.txz` `.tzst`), single-file GZIP / BZIP2 / XZ / LZMA / Zstandard, 7-Zip and RAR / CBR in a single window. **Read-only by design — never modifies archive contents.** Every listed extension is covered by a test that opens a real archive of that type, lists it, and extracts the contents.
 - Bundled Finder Quick Look preview extension: Space-key entry-list preview, four columns (Name / Size / Modified / Kind), folder collapse, striped rows.
 - Inline previews without unzipping — text, source code, JSON (pretty), Markdown, RTF, HTML (CSP-locked), CSV/TSV table, images (pinch / wheel zoom), PDF, and an Apple Quick Look fallback for Office / iWork / audio / video / 3-D / PSD.
 - Quick Preview window: select a file inside Arkheion, press Space for a larger preview with arrow-key navigation through the whole archive; Escape closes.

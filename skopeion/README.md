@@ -4,7 +4,7 @@ A fast, distraction-free comic and image viewer for macOS — tuned for manga re
 
 ## What it does
 
-- Reads ZIP / CBZ / RAR / CBR / 7z / TAR (gz / bz2 / xz) / Zstandard / PDF and every common image format (JPEG, PNG, GIF, BMP, TIFF, WebP, AVIF, HEIC, JPEG 2000, RAW, and more).
+- Reads ZIP / CBZ / RAR / CBR / 7z / CB7 / TAR (gz / bz2 / xz / zst) / Zstandard / single-file gzip, bzip2, xz / PDF, plus JPEG, PNG, GIF, BMP, TIFF, WebP, AVIF, HEIC / HEIF, JPEG 2000, PSD, ICO, APNG, TGA, OpenEXR and camera RAW from nine manufacturers. Every format listed here was checked by opening a real file in it.
 - PDF table of contents: PDFs with a built-in outline show a Table of Contents sidebar — click an entry to jump to that page, with the current section highlighted. Toggle with `o` or the View menu.
 - Right-to-left two-page spreads for manga, left-to-right for Western comics. First page shows alone as a cover.
 - Smooth page turns: pages decoded ahead and behind in the background. Next volume's cover is pre-fetched so jumping between archives feels instant.

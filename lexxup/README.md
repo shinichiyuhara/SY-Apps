@@ -6,10 +6,19 @@ every dictionary, merged and grouped, in a fast, familiar interface.
 
 An English dictionary is **included**, so it works the moment you open it:
 Webster's Revised Unabridged Dictionary (1913), in the public domain. Add your
-own EPWING dictionaries whenever you like.
+own EPWING dictionaries whenever you like — and **DICT (dictd) dictionaries** as
+well, which is the format the freely licensed collections from dict.org and
+FreeDict ship in.
 
 ## What it does
 
+- **An English dictionary is included** — Webster's Revised Unabridged Dictionary
+  (1913), about 114,000 entries, public domain. Nothing to download or configure
+  before the first search.
+- **Reads EPWING and DICT (dictd)** dictionaries, in one shelf and one search.
+  DICT bodies may be plain or dictzip-compressed. (Backward "ends with" matching
+  is EPWING-only: a dictd index is sorted forwards and has nothing to answer it
+  with.)
 - **Cross-dictionary search** across every registered EPWING dictionary, run in
   parallel — one query returns hits from all of them, grouped per dictionary with
   a hit count for each.

@@ -4,10 +4,11 @@ A macOS library manager for video collections — manage, tag, preview, play, an
 
 ## What it does
 
-- Registers one or more folders as Libraries; recognises **44 video extensions** (mp4 / m4v / mov / mkv / webm / avi / wmv / flv / mpg / ts / 3gp / vob / mxf / dv / hevc / av1 / h266 and more).
+- Registers one or more folders as Libraries; recognises **38 video extensions** (mp4 / m4v / mov / mkv / webm / avi / wmv / flv / mpg / ts / 3gp / vob / mxf / dv / hevc / av1 and more).
 - AVFoundation-driven metadata extraction (duration, resolution, codec) cached in a sandboxed SQLite database; library scans run incrementally (size/mtime diff) so the grid populates while indexing is still in flight.
 - Tags, 5-star ratings, favorites, watched flag, and free-form notes per video. Smart folders for All Videos, Favorites, Watched, Recently Added, Recently Opened, per-rating buckets, and **Corrupted / Unplayable** (files no decoder could open).
-- Thumbnail pipeline (QuickLook → AVFoundation with dark-frame detection over 9 timestamp candidates → in-process FFmpegKit for mkv / VP9 / AV1 / Opus / VVC) plus a contact sheet in three tiers: 3×3 inline (1024 px), 5×4 enlarged preview (2048 px), 5×4 export (4096 px) — press **v** or **Space** for the enlarged preview.
+- Thumbnail pipeline (QuickLook → AVFoundation with dark-frame detection over 9 timestamp candidates → in-process FFmpegKit for mkv / VP9 / AV1 / Opus) plus a contact sheet in three tiers: 3×3 inline (1024 px), 5×4 enlarged preview (2048 px), 5×4 export (4096 px) — press **Cmd+Y** or **Space** for the enlarged preview.
+- **Contact sheet mode** (**Cmd+Opt+Y**): keep a sheet next to a video under the same name (`AAA.mkv` → `AAA.jpg` / `.avif` / `.webp`) and Kineion shows it as-is instead of re-rendering — this mode pages through **only** the videos that have one. Arrows move, **Return** plays via your configured open action, **Esc** returns, ⌃⌘F goes full screen.
 - Contact sheet **export to JPEG, WebP, or AVIF** with per-format quality sliders (**Settings → Thumbnails**).
 - Background prefetch — after a Library scan finishes, thumbnails generate automatically so subsequent browsing is instant.
 - **Portable per-library cache** — choose where each Library's thumbnail / contact-sheet cache lives: the central OS-managed cache (best for internal drives) or a hidden `.Kineion/` folder at the Library root, keyed by the file's library-relative path so an external drive carries its cache to another Mac and reuses it instead of regenerating. Switchable any time from the sidebar (**Cache Location**); a leftover `.Kineion/` from a folder that is no longer a Library is detected on scan and offered for cleanup.
