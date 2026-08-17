@@ -33,30 +33,18 @@ FreeDict ship in.
 - Scope a search with **category tabs** and your own **dictionary groups**;
   enable, disable, categorize, and reorder dictionaries in a Collections view.
 
-## Reading an entry
-
-- **Audio pronunciation** playback for dictionaries that embed recorded sound —
-  click the speaker beside the pronunciation.
-- **Figures shown inline** as images, and **clickable cross-references** that jump
-  between entries, with **Back / Forward** and **Previous / Next** navigation.
-- Right-click a selection to **look it up across your dictionaries**.
-- Customizable **font, size, line spacing, and colors**; zoom; **vertical
-  writing**; and full **dark-mode** support.
-
-## Keeping your place
-
-- **History** grouped by day, and **bookmarks** you can organize into folders.
-- Icon sidebar for Search / History / Bookmarks / Collections, and keyboard
-  navigation throughout.
-
-## Language
-
-English and Japanese interface; the menu language follows your in-app preference,
-not the OS locale.
+- **Audio pronunciation** for dictionaries that embed recorded sound, **figures
+  inline**, and **clickable cross-references** with Back / Forward and
+  Previous / Next navigation. Right-click a selection to look it up.
+- **History** grouped by day and **bookmarks** in folders; customizable font,
+  size, spacing and colors, zoom, **vertical writing**, and dark mode.
+- **English and Japanese interface**, following your in-app preference rather
+  than the OS locale.
 
 ## Install
 
-Coming to the Mac App Store — requires macOS 14 (Sonoma) or later.
+[On the Mac App Store](https://apps.apple.com/app/id6791462846?mt=12) — ¥3,000.
+Requires macOS 14 (Sonoma) or later on Apple silicon.
 
 ## Privacy
 

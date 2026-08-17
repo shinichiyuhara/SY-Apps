@@ -1,6 +1,6 @@
 # Privacy Policy — LexxUp
 
-Last updated: 2026-07-18
+Last updated: 2026-07-31
 
 LexxUp ("the app") does not collect, transmit, or share any personal
 information. It runs entirely on your Mac and makes no network requests.
@@ -15,7 +15,7 @@ information. It runs entirely on your Mac and makes no network requests.
 ## What is stored locally
 
 Stored only on your Mac (macOS UserDefaults, the app's local SQLite database, or
-its Application Support / Caches directories):
+its Application Support directory):
 
 - **Your dictionary folder** — read-only. You choose the folder; on the Mac App
   Store version a security-scoped bookmark is saved so the app can reopen it
@@ -31,9 +31,10 @@ its Application Support / Caches directories):
 - **Full-text search index** (optional; off by default) — an index over entry
   bodies, derived from your dictionaries, kept inside the local SQLite database
   and never sent anywhere.
-- **Character-rendering resources** — GAIJI (external-character) maps and a
-  cached image rendering of dictionary glyphs, kept in Application Support and
-  Caches. These are derived rendering resources, not personal data.
+- **Character-rendering resources** — GAIJI (external-character) maps, kept in
+  Application Support. Rendered glyphs are held in memory for as long as the app
+  runs and are not written to disk. These are derived rendering resources, not
+  personal data.
 - **Preferences** — interface language, display settings (font, size, spacing,
   colors, zoom, vertical writing), and behavior flags. Stored in macOS
   UserDefaults.
@@ -41,9 +42,8 @@ its Application Support / Caches directories):
   it is not written to disk and is discarded when you quit. Dictionary file names
   and paths in it are redacted by default (Settings → Diagnostics).
 
-App data lives under `~/Library/Application Support/Jisho/` and
-`~/Library/Caches/`; preferences live in macOS UserDefaults. Nothing leaves your
-Mac.
+App data lives under `~/Library/Application Support/Jisho/`; preferences live in
+macOS UserDefaults. Nothing leaves your Mac.
 
 ## Required-reason APIs
 
@@ -60,8 +60,13 @@ app's own on-device function:
 
 - Settings → Privacy → **Erase all app data** wipes your history, bookmarks,
   the dictionary registry, recent searches, and the full-text index in one step.
-  Your dictionaries and cached rendering resources are preserved, as they are
-  resources rather than personal data.
+  It also clears your preferences — the interface language, display settings, and
+  the dictionary folder you chose, including the stored permission for it. Expect
+  the app to come back as it was on first launch: it will ask for a dictionary
+  folder again, and the menus return to English until you set the language back.
+- Your dictionaries themselves are never touched — the app only ever reads that
+  folder. GAIJI maps are kept too: they are rendering resources you assemble and
+  curate, not personal data, and rebuilding them is expensive.
 
 ## Children
 
