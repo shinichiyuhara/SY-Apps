@@ -2,8 +2,12 @@
 
 Last updated: 2026-08-20
 
-SiteBlocker is a Chrome extension (Manifest V3) that blocks distracting websites. It does not
-collect, transmit, or sell any personal data. Everything happens locally in your browser.
+SiteBlocker is a Chrome extension (Manifest V3) that blocks distracting websites. To do its job it
+stores some data — your block list, settings, and (optionally) per-site time. **By default it all
+stays on your device.** We run no servers of our own, and SiteBlocker never sells your data or uses
+it for advertising. One optional feature you can turn on — cross-device settings sync — uses your
+**browser's own sync** to copy your block list and settings to your other devices; it is described
+under "What is stored" below and is **off by default**.
 
 ## What we don't do
 
@@ -13,10 +17,10 @@ collect, transmit, or sell any personal data. Everything happens locally in your
 - No reading of page content. Blocking, the block screen, and element hiding are applied without
   inspecting what a page contains.
 
-## What is stored locally
+## What is stored
 
-All settings and state live only in the browser's local extension storage (`chrome.storage.local`)
-on your device:
+By default, all settings and state live only in the browser's local extension storage
+(`chrome.storage.local`) on your device:
 
 - Your block list, blocking mode (block-list / allow-list), schedules, focus-timer settings,
   element-hiding settings, and block-screen settings.
@@ -25,6 +29,16 @@ on your device:
   recorded. This data is kept **on your device until you delete it** (so year-over-year totals are
   possible); clear it any time from Stats → reset or Settings → Privacy & data.
 - If you enable password protection, the password is stored **hashed with PBKDF2** — never in plaintext.
+
+### Optional cross-device settings sync (off by default)
+
+If — and only if — you turn on **"Sync settings across devices"**, SiteBlocker places your **block
+list and settings** (including the PBKDF2-**hashed** password, if set) into the browser's synced
+extension storage (`chrome.storage.sync`). Your browser (Chrome, Brave, etc.) then copies them to
+your other devices signed in to the **same browser account**, through **that browser vendor's sync
+service** — governed by the browser's own privacy policy, not ours. We still receive nothing and run
+no servers. **Your time-tracking data is never synced** (it stays local to each device). This is off
+by default; when off, nothing is synced.
 
 ### Optional native-messaging integration (off by default)
 
@@ -39,6 +53,8 @@ machine. It is off by default; when off, nothing is passed.
 - **Settings → Privacy & data** offers "Reset settings to defaults" (keeps your block list and tracked
   time) and "Remove all data" (erases block list, settings, tracked time, and password — irreversible).
 - Turn off "Track time on all sites" to stop and keep no time data.
+- Turn off "Sync settings across devices" to stop syncing; "Remove all data" also clears the synced
+  copy from your browser's storage.
 - Removing (uninstalling) the extension deletes all of its local storage.
 
 ## Permissions
@@ -51,8 +67,8 @@ host permissions (so blocking, the block screen, and element hiding can apply to
 
 ## Children
 
-SiteBlocker is a general-purpose productivity tool and is not directed to children. It collects no
-personal information from anyone.
+SiteBlocker is a general-purpose productivity tool and is not directed to children. We do not sell
+anyone's personal information or send it to any server of ours.
 
 ## Third-party content
 
