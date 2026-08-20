@@ -37,15 +37,23 @@ list and settings** (including the PBKDF2-**hashed** password, if set) into the 
 extension storage (`chrome.storage.sync`). Your browser (Chrome, Brave, etc.) then copies them to
 your other devices signed in to the **same browser account**, through **that browser vendor's sync
 service** — governed by the browser's own privacy policy, not ours. We still receive nothing and run
-no servers. **Your time-tracking data is never synced** (it stays local to each device). This is off
-by default; when off, nothing is synced.
+no servers. This built-in sync covers **settings and the block list only**; to share your
+**time-tracking totals** across your devices, use the Nudge integration below. This is off by
+default; when off, nothing is synced.
 
 ### Optional native-messaging integration (off by default)
 
 If — and only if — you explicitly enable "Send website time to Nudge", the extension passes **host
-names and daily seconds only** to a companion app (Nudge) running **on the same computer**, via the
-operating system's native-messaging channel. This is not a network request and nothing leaves your
-machine. It is off by default; when off, nothing is passed.
+names and daily totals only** (day + host + seconds — no full URLs, paths, visit times, or page
+content) to a companion app (Nudge) running **on the same computer**, via the operating system's
+native-messaging channel. The hand-off itself is local — not a network request, and nothing is sent
+to us or to any server we run.
+
+Nudge is your own app. If you use **Nudge's multi-device sync**, Nudge may then copy these day/host
+totals to **your other devices** so your website-time log is complete across the machines you use.
+That sync is performed by Nudge through a storage location **you** choose (for example a folder you
+already sync), under Nudge's own privacy policy — again, with no server of ours involved. This whole
+integration is off by default; when off, nothing is passed or shared.
 
 ## How to delete the data
 
