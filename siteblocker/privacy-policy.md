@@ -1,6 +1,6 @@
 # Privacy Policy — SiteBlocker
 
-Last updated: 2026-08-16
+Last updated: 2026-08-20
 
 SiteBlocker is a Chrome extension (Manifest V3) that blocks distracting websites. It does not
 collect, transmit, or sell any personal data. Everything happens locally in your browser.
@@ -22,7 +22,8 @@ on your device:
   element-hiding settings, and block-screen settings.
 - Optional time tracking: foreground time per **host** (daily totals only) for sites you visit — no
   full URLs, page contents, or browsing history. It can be turned off, in which case nothing is
-  recorded. Data is kept about 90 days.
+  recorded. This data is kept **on your device until you delete it** (so year-over-year totals are
+  possible); clear it any time from Stats → reset or Settings → Privacy & data.
 - If you enable password protection, the password is stored **hashed with PBKDF2** — never in plaintext.
 
 ### Optional native-messaging integration (off by default)
@@ -35,6 +36,8 @@ machine. It is off by default; when off, nothing is passed.
 ## How to delete the data
 
 - Remove individual entries in the extension's Settings, or use Stats → reset to clear recorded time.
+- **Settings → Privacy & data** offers "Reset settings to defaults" (keeps your block list and tracked
+  time) and "Remove all data" (erases block list, settings, tracked time, and password — irreversible).
 - Turn off "Track time on all sites" to stop and keep no time data.
 - Removing (uninstalling) the extension deletes all of its local storage.
 
