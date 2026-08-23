@@ -1,6 +1,6 @@
 # Privacy Policy — SiteBlocker
 
-Last updated: 2026-08-20
+Last updated: 2026-08-23
 
 SiteBlocker is a Chrome extension (Manifest V3) that blocks distracting websites. To do its job it
 stores some data — your block list, settings, and (optionally) per-site time. **By default it all
@@ -19,12 +19,13 @@ under "What is stored" below and is **off by default**.
 
 ## What is stored
 
-By default, all settings and state live only in the browser's local extension storage
-(`chrome.storage.local`) on your device:
+By default, all settings and state live only in your browser, on your device:
 
 - Your block list, blocking mode (block-list / allow-list), schedules, focus-timer settings,
-  element-hiding settings, and block-screen settings.
-- Optional time tracking: foreground time per **host** (daily totals only) for sites you visit — no
+  element-hiding settings, and block-screen settings — in the browser's local extension storage
+  (`chrome.storage.local`).
+- Optional time tracking: foreground time per **host** (daily totals only) for sites you visit,
+  stored in the browser's on-device database (**IndexedDB**) — no
   full URLs, page contents, or browsing history. It can be turned off, in which case nothing is
   recorded. This data is kept **on your device until you delete it** (so year-over-year totals are
   possible); clear it any time from Stats → reset or Settings → Privacy & data.
@@ -70,8 +71,10 @@ integration is off by default; when off, nothing is passed or shared.
 `declarativeNetRequest` (blocking), `storage` (save settings), `tabs` (read the active tab's host to
 show block/unblock state; URLs are not stored or sent), `alarms` (schedules and the focus timer),
 `idle` (pause local time tracking while you are away), `contextMenus` (right-click "block this site"),
-`notifications` (focus/break phase alerts), `nativeMessaging` (optional Nudge integration above), and
-host permissions (so blocking, the block screen, and element hiding can apply to sites you choose).
+`notifications` (focus/break phase alerts), `offscreen` (play the focus timer's short start/end sounds
+locally — a service worker cannot play audio; no data is accessed), `nativeMessaging` (optional Nudge
+integration above), and host permissions (so blocking, the block screen, and element hiding can apply
+to sites you choose).
 
 ## Children
 

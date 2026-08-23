@@ -6,7 +6,11 @@ A private, local website blocker for Chrome (Manifest V3).
 
 - One-click block/unblock from the toolbar; block-list or allow-list (whitelist) mode.
 - Match sites by domain, wildcard, keyword, or regular expression, with time-window schedules.
-- Focus timer (Pomodoro) that enforces blocking, with optional ambient sounds and a full-screen timer.
+- Focus timer (Pomodoro) that enforces blocking, with a full-screen timer, optional ambient sounds,
+  and start/end cues; runs one focus→break cycle by default (auto-continue is optional).
+- Pause all blocking for 5 minutes when you need a quick break; it resumes automatically.
+- Never-block safelist: the Chrome Web Store stays reachable (so you can always manage the extension),
+  local dev hosts are protected by default, and you can add your own must-not-block sites.
 - Hide distracting on-page elements (feeds, comments, Shorts, sidebars) with per-site toggles, a
   master switch, a temporary pause, and custom CSS selectors.
 - Optional block screen with public-domain artwork and quotes.
