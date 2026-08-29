@@ -1,6 +1,6 @@
 # Privacy Policy — SiteBlocker
 
-Last updated: 2026-08-23
+Last updated: 2026-08-29
 
 SiteBlocker is a Chrome extension (Manifest V3) that blocks distracting websites. To do its job it
 stores some data — your block list, settings, and (optionally) per-site time. **By default it all
@@ -30,6 +30,11 @@ By default, all settings and state live only in your browser, on your device:
   recorded. This data is kept **on your device until you delete it** (so year-over-year totals are
   possible); clear it any time from Stats → reset or Settings → Privacy & data.
 - If you enable password protection, the password is stored **hashed with PBKDF2** — never in plaintext.
+- **Only if** you turn on the block screen's **"allow for N minutes"** button (off by default): a tab's
+  current address is held **temporarily in memory** (`chrome.storage.session`) so that, after you use
+  that button, you return to the exact page you were on rather than the site's home page. It never
+  leaves your device, is not written to disk by us, is removed when the tab closes, and is gone when
+  the browser restarts. While that button is off, no tab addresses are kept at all.
 
 ### Optional cross-device settings sync (off by default)
 
@@ -69,7 +74,10 @@ integration is off by default; when off, nothing is passed or shared.
 ## Permissions
 
 `declarativeNetRequest` (blocking), `storage` (save settings), `tabs` (read the active tab's host to
-show block/unblock state; URLs are not stored or sent), `alarms` (schedules and the focus timer),
+show block/unblock state, and — only when the block screen's "allow for N minutes" button is enabled —
+briefly remember a tab's current address on your device so that button can return you to the exact
+page; never written to disk by us, cleared when the tab or browser closes, and never sent anywhere),
+`alarms` (schedules and the focus timer),
 `idle` (pause local time tracking while you are away), `contextMenus` (right-click "block this site"),
 `notifications` (focus/break phase alerts), `offscreen` (play the focus timer's short start/end sounds
 locally — a service worker cannot play audio; no data is accessed), `nativeMessaging` (optional Nudge
